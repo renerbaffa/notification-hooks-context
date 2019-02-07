@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Alert({ content, dismiss, id }) {
+  useEffect(() => {
+    setTimeout(() => dismiss(id), 2000);
+  }, []);
+
   return (
     <div className="alert alert-success" role="alert">
       {content}
