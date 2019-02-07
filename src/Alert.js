@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Alert({ content }) {
+function Alert({ content, dismiss, id }) {
   return (
     <div className="alert alert-success" role="alert">
       {content}
@@ -9,6 +9,7 @@ function Alert({ content }) {
         className="close"
         data-dismiss="alert"
         aria-label="Close"
+        onClick={() => dismiss(id)}
       >
         <span aria-hidden="true">&times;</span>
       </button>

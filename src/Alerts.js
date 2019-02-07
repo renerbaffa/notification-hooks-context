@@ -13,12 +13,12 @@ const styles = css({
 });
 
 function Alerts() {
-  const [notifications] = useContext(NotificationContext);
+  const [notifications, , dismiss] = useContext(NotificationContext);
 
   return (
     <div className={styles}>
       {notifications.map(notification => (
-        <Alert key={notification.id} {...notification} />
+        <Alert key={notification.id} dismiss={dismiss} {...notification} />
       ))}
     </div>
   );
