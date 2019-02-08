@@ -1,4 +1,4 @@
-# Notification system to allow
+# Notification system
 
 Displays a list notifications in the bottom of the screen. Built using React Hooks + Context API for practicing. :)
 
