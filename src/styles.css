@@ -7,3 +7,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+#modal {
+  position: fixed;
+  bottom: 0;
+  margin: 0 20px;
+  width: calc(100% - 40px);
+}
