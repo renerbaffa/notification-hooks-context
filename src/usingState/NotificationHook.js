@@ -4,6 +4,7 @@ function useNotification() {
   const [notifications, setNotifications] = useState([]);
 
   function addNotification(notification) {
+    console.log('usingState');
     const lastNotification = notifications[notifications.length - 1];
     const newId = lastNotification
       ? lastNotification.id + 1

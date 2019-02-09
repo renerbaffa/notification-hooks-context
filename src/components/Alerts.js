@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { createPortal } from 'react-dom';
 
 import Alert from './Alert';
-import NotificationContext from './context/NotificationContext';
+import NotificationContext from '../context/NotificationContext';
 
 function Alerts() {
   const [notifications, , dismiss] = useContext(NotificationContext);

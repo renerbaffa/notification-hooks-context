@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 
-import NotificationContext from './context/NotificationContext';
+import NotificationContext from '../context/NotificationContext';
 
 function NotificationManager() {
-  const [, addNotification] = useContext(NotificationContext);
+  const [, addNotification, , reset] = useContext(NotificationContext);
 
   return (
     <div className="flex">
@@ -12,6 +12,7 @@ function NotificationManager() {
       >
         Dispatch an alert!
       </button>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 }
